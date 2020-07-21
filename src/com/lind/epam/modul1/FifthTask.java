@@ -6,10 +6,6 @@ package com.lind.epam.modul1;
 
 public class FifthTask {
 
-    public FifthTask() {
-
-    }
-
     public static void main(String[] args) {
 
         int seconds = 10550;
