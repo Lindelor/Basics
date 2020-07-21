@@ -20,6 +20,7 @@ public class Main {
         System.out.println("1st task answer: \n" + FirstTask.firstMethod(a, b, c));
         System.out.println("2nd task answer: \n" + SecondTask.secondMethod(a, b, c));
         System.out.println("3rd task answer: \n" + ThirdTask.thirdMethod(a, b));
+        System.out.println("4th task answer:\n" + FourthTask.fourthTask(723.822));
 
     }
 }

@@ -5,6 +5,12 @@ package com.lind.epam.modul1;
 
 public class FourthTask {
 
+    public static double fourthTask(final double a) {
 
+        String string = String.valueOf(a);
+        string = string.substring(4) + "." + string.substring(0,3);
+        return Double.parseDouble(string);
+
+    }
 
 }
