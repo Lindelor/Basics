@@ -1,4 +1,4 @@
-package com.lind.epam.modul1;
+package com.lind.epam.modul1.part.one;
 
 //        Дано натуральное число Т, которое представляет длительность прошедшего времени в секундах.
 //        Вывести данное значение длительности в часах, минутах и секундах в следующей форме:
@@ -8,7 +8,7 @@ public class FifthTask {
 
     public static void main(String[] args) {
 
-        int seconds = 10550;
+        int seconds = 10552;
         new FifthTask().clock(seconds);
 
     }

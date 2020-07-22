@@ -1,4 +1,4 @@
-package com.lind.epam.modul1;
+package com.lind.epam.modul1.part.one;
 
 import java.util.Scanner;
 

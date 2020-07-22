@@ -1,4 +1,4 @@
-package com.lind.epam.modul1;
+package com.lind.epam.modul1.part.one;
 
 //        z = ((a-3)*b/2)+c
 
