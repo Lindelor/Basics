@@ -1,4 +1,4 @@
-package com.lind.epam.modul1.part.one;
+package com.modul1.part.one;
 
 import java.util.Scanner;
 
@@ -12,10 +12,13 @@ public class SixthTask {
         float x;
         float y;
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Input x: ");
         x = scanner.nextFloat();
+
         System.out.println("Input y: ");
         y = scanner.nextFloat();
+
         System.out.println(new SixthTask().isBelongs(x, y));
 
     }

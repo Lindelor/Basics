@@ -1,4 +1,4 @@
-package com.lind.epam.modul1.part.two;
+package com.modul1.part.two;
 
 //    Вычислить значение функции
 //    x^2-3x+9, если x<=3
@@ -20,6 +20,7 @@ public class FifthTask {
             System.out.println("Answer is: ");
             System.out.println(pow(x, 2) - 3 * x + 9);
         }
+
         else {
             System.out.println("Answer is: ");
             System.out.println(1 / (pow(x, 3) + 6));

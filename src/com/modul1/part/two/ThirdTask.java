@@ -1,4 +1,4 @@
-package com.lind.epam.modul1.part.two;
+package com.modul1.part.two;
 
 //  Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3).
 //  Определить, будут ли они расположены на одной прямой
@@ -22,6 +22,7 @@ public class ThirdTask {
         if ((x3 - x1) / (x2 - x1) == (y3 - y1) / (y2 - y1)) {
             return true;
         }
+
         return false;
     }
 

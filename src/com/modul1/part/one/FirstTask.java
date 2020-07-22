@@ -1,4 +1,4 @@
-package com.lind.epam.modul1.part.one;
+package com.modul1.part.one;
 
 //        z = ((a-3)*b/2)+c
 
@@ -11,18 +11,22 @@ public class FirstTask {
         float a;
         float b;
         float c;
+
         System.out.println("Input a: ");
         a = scanner.nextFloat();
+
         System.out.println("Input b: ");
         b = scanner.nextFloat();
+
         System.out.println("Input c: ");
         c = scanner.nextFloat();
+
         System.out.println("1st task answer: \n" + FirstTask.firstMethod(a, b, c));
 
     }
 
     public static float firstMethod(final float a, final float b, final float c) {
-        return ((a - 3) * b / 2) + c;
+        return (float) (((a - 3.0) * b / 2.0) + c);
     }
 
 }

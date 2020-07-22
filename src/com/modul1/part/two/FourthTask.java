@@ -1,4 +1,4 @@
-package com.lind.epam.modul1.part.two;
+package com.modul1.part.two;
 
 //    Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича.
 //        Определить, пройдет ли кирпич через отверстие.
@@ -22,9 +22,11 @@ public class FourthTask {
         if (a >= x && (b >= y || b >= z)) {
             return true;
         }
+
         else if (b >= x && (a >= y || a >= z)) {
             return true;
         }
+
         return false;
     }
 
