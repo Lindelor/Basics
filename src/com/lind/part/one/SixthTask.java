@@ -11,13 +11,9 @@ public class SixthTask {
     public static void main(String[] args) {
         float x;
         float y;
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Input x: ");
-        x = scanner.nextFloat();
-
-        System.out.println("Input y: ");
-        y = scanner.nextFloat();
+        x = input("X");
+        y = input("y");
 
         System.out.println(new SixthTask().isBelongs(x, y));
 
@@ -33,5 +29,17 @@ public class SixthTask {
         }
 
         return false;
+    }
+
+    public static float input(String string) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input " + string + ":");
+
+        while (!scanner.hasNextFloat()) {
+            scanner.next();
+            System.out.println("Input " + string + ":");
+        }
+        return scanner.nextFloat();
+
     }
 }

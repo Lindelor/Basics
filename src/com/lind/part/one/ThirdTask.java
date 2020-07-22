@@ -10,14 +10,13 @@ public class ThirdTask {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        float a;
-        float b;
 
-        System.out.println("Input a: ");
-        a = scanner.nextFloat();
-        System.out.println("Input b: ");
-        b = scanner.nextFloat();
+        double a;
+        double b;
+
+        a = input("a");
+        b = input("b");
+
         System.out.println("3rd task answer: \n" + thirdMethod(a, b));
 
     }
@@ -31,4 +30,15 @@ public class ThirdTask {
         return ((sin(x) + cos(y)) / (cos(x) - sin(y))) * tan(x * y);
     }
 
+    public static double input(String string) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input " + string + ":");
+
+        while (!scanner.hasNextDouble()) {
+            scanner.next();
+            System.out.println("Input " + string + ":");
+        }
+        return scanner.nextDouble();
+
+    }
 }

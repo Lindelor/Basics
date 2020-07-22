@@ -10,19 +10,14 @@ import static java.lang.Math.sqrt;
 public class SecondTask {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
         double a;
         double b;
         double c;
 
-        System.out.println("Input a: ");
-        a = scanner.nextFloat();
-
-        System.out.println("Input b: ");
-        b = scanner.nextFloat();
-
-        System.out.println("Input c: ");
-        c = scanner.nextFloat();
+        a = input("a");
+        b = input("b");
+        c = input("c");
 
         System.out.println("2nd task answer: \n" + secondMethod(a, b, c));
 
@@ -37,6 +32,16 @@ public class SecondTask {
         return 0;
     }
 
+    public static double input(String string) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input " + string + ":");
 
+        while (!scanner.hasNextDouble()) {
+            scanner.next();
+            System.out.println("Input " + string + ":");
+        }
+        return scanner.nextDouble();
+
+    }
 
 }

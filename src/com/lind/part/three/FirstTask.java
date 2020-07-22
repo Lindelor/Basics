@@ -11,10 +11,8 @@ public class FirstTask {
     public static void main(String[] args) {
 
         int a;
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Input a: ");
-        a = scanner.nextInt();
+        a = input("a");
 
         if (a <= 0) {
             System.out.println("Invalid argument");
@@ -35,6 +33,16 @@ public class FirstTask {
 
     }
 
+    public static int input(String string) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input " + string + ":");
 
+        while (!scanner.hasNextInt()) {
+            scanner.next();
+            System.out.println("Input " + string + ":");
+        }
+        return scanner.nextInt();
+
+    }
 
 }

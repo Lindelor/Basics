@@ -10,13 +10,9 @@ public class FirstTask {
     public static void main(String[] args) {
         int a;
         int b;
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите величину угла a: ");
-        a = scanner.nextInt();
-
-        System.out.println("Введите величину угла b: ");
-        b = scanner.nextInt();
+        a = input("a");
+        b = input("b");
 
         new FirstTask().isRightTriangle(a, b);
 
@@ -40,4 +36,15 @@ public class FirstTask {
         }
     }
 
+    public static int input(String string) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input " + string + ":");
+
+        while (!scanner.hasNextInt()) {
+            scanner.next();
+            System.out.println("Input " + string + ":");
+        }
+        return scanner.nextInt();
+
+    }
 }

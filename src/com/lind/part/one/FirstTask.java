@@ -7,19 +7,14 @@ import java.util.Scanner;
 public class FirstTask {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
         float a;
         float b;
         float c;
 
-        System.out.println("Input a: ");
-        a = scanner.nextFloat();
-
-        System.out.println("Input b: ");
-        b = scanner.nextFloat();
-
-        System.out.println("Input c: ");
-        c = scanner.nextFloat();
+        a = input("a");
+        b = input("b");
+        c = input("c");
 
         System.out.println("1st task answer: \n" + FirstTask.firstMethod(a, b, c));
 
@@ -27,6 +22,18 @@ public class FirstTask {
 
     public static float firstMethod(final float a, final float b, final float c) {
         return (float) (((a - 3.0f) * b / 2.0f) + c);
+    }
+
+    public static float input(String string) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input " + string + ":");
+
+        while (!scanner.hasNextFloat()) {
+            scanner.next();
+            System.out.println("Input " + string + ":");
+        }
+        return scanner.nextFloat();
+
     }
 
 }

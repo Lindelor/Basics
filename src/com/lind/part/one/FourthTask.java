@@ -10,10 +10,8 @@ public class FourthTask {
     public static void main(String[] args) {
 
         float a;
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Input a: ");
-        a = scanner.nextFloat();
+        a = input("a");
 
         System.out.println("4th task answer: \n" + fourthTask(a));
 
@@ -24,6 +22,18 @@ public class FourthTask {
         String string = String.valueOf(a);
         string = string.substring(4) + "." + string.substring(0,3);
         return Float.parseFloat(string);
+
+    }
+
+    public static float input(String string) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input " + string + ":");
+
+        while (!scanner.hasNextFloat()) {
+            scanner.next();
+            System.out.println("Input " + string + ":");
+        }
+        return scanner.nextFloat();
 
     }
 
