@@ -21,7 +21,7 @@ public class FirstTask {
     }
 
     public void isRightTriangle(final int a, final int b) {
-        if (a + b < 180) {
+        if (a + b < 180 && a > 0 && b > 0) {
             System.out.println("Треугольник существует");
             if (b == 90 || a == 90 || a + b == 90) {
                 System.out.println("Треугольник прямоугольный");
