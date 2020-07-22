@@ -24,13 +24,13 @@ public class FirstTask {
         return (float) (((a - 3.0f) * b / 2.0f) + c);
     }
 
-    public static float input(String string) {
+    public static float input(String name) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Input " + string + ":");
+        System.out.println("Input " + name + ":");
 
         while (!scanner.hasNextFloat()) {
             scanner.next();
-            System.out.println("Input " + string + ":");
+            System.out.println("Input " + name + ":");
         }
         return scanner.nextFloat();
 

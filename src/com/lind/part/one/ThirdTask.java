@@ -30,13 +30,13 @@ public class ThirdTask {
         return ((sin(x) + cos(y)) / (cos(x) - sin(y))) * tan(x * y);
     }
 
-    public static double input(String string) {
+    public static double input(String name) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Input " + string + ":");
+        System.out.println("Input " + name + ":");
 
         while (!scanner.hasNextDouble()) {
             scanner.next();
-            System.out.println("Input " + string + ":");
+            System.out.println("Input " + name + ":");
         }
         return scanner.nextDouble();
 

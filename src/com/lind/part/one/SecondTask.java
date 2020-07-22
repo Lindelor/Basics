@@ -32,13 +32,13 @@ public class SecondTask {
         return 0;
     }
 
-    public static double input(String string) {
+    public static double input(String name) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Input " + string + ":");
+        System.out.println("Input " + name + ":");
 
         while (!scanner.hasNextDouble()) {
             scanner.next();
-            System.out.println("Input " + string + ":");
+            System.out.println("Input " + name + ":");
         }
         return scanner.nextDouble();
 

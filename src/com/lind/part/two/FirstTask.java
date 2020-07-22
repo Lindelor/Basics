@@ -36,13 +36,13 @@ public class FirstTask {
         }
     }
 
-    public static int input(String string) {
+    public static int input(String name) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Input " + string + ":");
+        System.out.println("Input " + name + ":");
 
         while (!scanner.hasNextInt()) {
             scanner.next();
-            System.out.println("Input " + string + ":");
+            System.out.println("Input " + name + ":");
         }
         return scanner.nextInt();
 
