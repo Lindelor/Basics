@@ -1,4 +1,4 @@
-package com.modul1.part.one;
+package com.lind.part.one;
 
 import java.util.Scanner;
 

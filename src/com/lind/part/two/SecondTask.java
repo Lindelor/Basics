@@ -1,4 +1,4 @@
-package com.modul1.part.two;
+package com.lind.part.two;
 
 // Найти max{min(a, b), min(c, d)}.
 //    в Java есть Math.max() и Math.min(), но тут вроде как ветвления проверяют, написал свой метод

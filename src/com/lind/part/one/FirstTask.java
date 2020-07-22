@@ -1,4 +1,4 @@
-package com.modul1.part.one;
+package com.lind.part.one;
 
 //        z = ((a-3)*b/2)+c
 

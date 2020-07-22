@@ -1,4 +1,4 @@
-package com.modul1.part.two;
+package com.lind.part.two;
 
 //    Вычислить значение функции
 //    x^2-3x+9, если x<=3
