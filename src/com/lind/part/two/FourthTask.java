@@ -10,8 +10,8 @@ public class FourthTask {
         int sizeA = 2;
         int sizeB = 3;
         int x = 4;
-        int y = 3;
-        int z = 2;
+        int y = 2;
+        int z = 3;
 
         System.out.println(new FourthTask().isSizeOk(sizeA, sizeB, x, y, z));
 
