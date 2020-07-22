@@ -26,7 +26,7 @@ public class FirstTask {
     }
 
     public static float firstMethod(final float a, final float b, final float c) {
-        return (float) (((a - 3.0) * b / 2.0) + c);
+        return (float) (((a - 3.0f) * b / 2.0f) + c);
     }
 
 }
