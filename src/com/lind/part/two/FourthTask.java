@@ -9,9 +9,9 @@ public class FourthTask {
 
         int sizeA = 2;
         int sizeB = 3;
-        int x = 2;
-        int y = 4;
-        int z = 1;
+        int x = 4;
+        int y = 3;
+        int z = 2;
 
         System.out.println(new FourthTask().isSizeOk(sizeA, sizeB, x, y, z));
 
@@ -24,6 +24,14 @@ public class FourthTask {
         }
 
         else if (b >= x && (a >= y || a >= z)) {
+            return true;
+        }
+
+        else if (b >= y && a >= z) {
+            return true;
+        }
+
+        else if (a >= y && b >= z) {
             return true;
         }
 
